@@ -371,7 +371,7 @@ class MainActivity : ComponentActivity() {
         Log.d(TAG, "Starting Mir Pay launch monitoring for: $packageName")
 
         val checkInterval = 500L // Проверяем каждые 500мс
-        val maxChecks = 10 // Максимум 5 секунд ожидания
+        val maxChecks = 6 // Максимум 3 секунд ожидания
         var checkCount = 0
 
         val checkRunnable = object : Runnable {
